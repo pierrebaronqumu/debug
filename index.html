@@ -42,38 +42,10 @@
         showInfoPanel: false,
         fullPlayerParameters: parameter
       });
-      // widget.api.init(function(err) {
-      //   return;
-      // });
-    }
-    
-    function createWidget2(guid, selector, mediaType, parameter) {
-      var widget = KV.widget({
-        selector: selector,
-        domain: 'apac.qumucloud.com',
-        // context: '',
-        guid: guid,
-        type: 'playback',
-        // playerType: 'full',
-        // autoLoad: true,
-        // autoPlay: true,
-        // loop: true,
-        // hideEmbedButton: true,
-        width: 400,
-        // hideDownloadButton: true,
-        // hideShareButton: true,
-        // mediaType: mediaType,
-        // showInfoPanel: false,
-        // fullPlayerParameters: parameter
+      widget.api.init(function(err) {
+        return;
       });
-      // widget.api.init(function(err) {
-      //   return;
-      // });
     }
-    // createWidget('VD3N2X3t2JsTW0jocShGUc', '#widget1', 'mo', {
-    //   version: 2,
-    //   volume: 0
-    // });
     
     createWidget('PMoQmms37sQoOihplHsK0X', '#widget1', 'mo', {
       version: 2,
