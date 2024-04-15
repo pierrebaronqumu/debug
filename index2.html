@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="canonical" href="https://codepen.io/pierrebaronqumu/pen/xxezVZN">
+  <script type="text/javascript" src="https://apac.qumucloud.com/widgets/application.js"></script>
+</head>
+<body>
+  <video src="https://apac.qumucloud.com/asset/RXaZoGgeaXZZmeVZ19rbZy?format=hls_default&delivery=CDN_INLINE" muted controls playsinline style="width:400px;"></video>  
+  <hr/>
+  <table>
+    <tr>
+      <td>
+        <div id="widget1" style="position:center; height:100%; width:100%;overflow: hidden;" class="container-full"></div>
+      </td>
+      <td>
+        <div id="widget2" style="position:center; height:100%; width:100%;overflow: hidden;" class="container-full"></div>
+      </td>
+    </tr>
+  </table>
+
+  <script type="text/javascript">
+    function createWidget(guid, selector, mediaType, parameter) {
+      var widget = KV.widget({
+        selector: selector,
+        domain: 'apac.qumucloud.com',
+        context: '',
+        guid: guid,
+        type: 'playback',
+        playerType: 'full',
+        autoLoad: false,
+        autoPlay: false,
+        loop: true,
+        hideEmbedButton: true,
+        width: 400,
+        hideDownloadButton: true,
+        hideShareButton: true,
+        mediaType: mediaType,
+        showInfoPanel: false,
+        fullPlayerParameters: parameter
+      });
+      // widget.api.init(function(err) {
+      //   return;
+      // });
+    }
+    
+    function createWidget2(guid, selector, mediaType, parameter) {
+      var widget = KV.widget({
+        selector: selector,
+        domain: 'apac.qumucloud.com',
+        // context: '',
+        guid: guid,
+        type: 'playback',
+        // playerType: 'full',
+        // autoLoad: true,
+        // autoPlay: true,
+        // loop: true,
+        // hideEmbedButton: true,
+        width: 400,
+        // hideDownloadButton: true,
+        // hideShareButton: true,
+        // mediaType: mediaType,
+        // showInfoPanel: false,
+        // fullPlayerParameters: parameter
+      });
+      // widget.api.init(function(err) {
+      //   return;
+      // });
+    }
+    // createWidget('VD3N2X3t2JsTW0jocShGUc', '#widget1', 'mo', {
+    //   version: 2,
+    //   volume: 0
+    // });
+    
+    createWidget('VD3N2X3t2JsTW0jocShGUc', '#widget1', 'mo', {
+      version: 2,
+      volume: 0
+    });
+  </script>
+</body>
+
+</html>
