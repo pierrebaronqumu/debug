@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-  <video src="https://apac.qumucloud.com/asset/RXaZoGgeaXZZmeVZ19rbZy?format=hls_default&delivery=CDN_INLINE" muted controls playsinline style="width:400px;" id="video"></video>  
+  <video src="https://apac.qumucloud.com/asset/RXaZoGgeaXZZmeVZ19rbZy?format=hls_default&delivery=CDN_INLINE" controls playsinline style="width:400px;" id="video"></video>  
 
+  <button type="button" id="btn">Start</button>
   <script>
     const videoEl = document.getElementById('video');
+    const buttonEl = document.getElementById('btn');
 
     console.log('Video loaded', videoEl);
-    
-    videoEl.play()
-      .then(() => console.log('video is playing'))
-      .catch((err) => console.log('error', err));
+
+    buttonEl.addEventListener('click', () => {
+      console.log('button clicked');
+      
+      videoEl.play()
+        .then(() => console.log('video is playing'))
+        .catch((err) => console.log('error', err));
+    });
   </script> 
 </body>
 </html>
