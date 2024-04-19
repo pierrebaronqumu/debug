@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script type="text/javascript" src="https://pbaron.qumu.dev/widgets/application.js"></script>
+</head>
+<body style="margin: 0;">
+  <button id="loadWidgetBtn">Load widget</button>
+  
+  <script type="text/javascript">
+    const loadWidgetBtn = document.getElementById('loadWidgetBtn');
+
+    loadWidgetBtn.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://pbaron.qumu.dev/view/PMoQmms37sQoOihplHsK0X?debug=true';
+      
+      document.body.appendChild(iframe);
+      document.body.removeChild(loadWidgetBtn);
+    });
+  </script>
+</body>
+</html>
