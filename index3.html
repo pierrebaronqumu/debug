@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script type="text/javascript" src="https://apac.qumucloud.com/widgets/application.js"></script>
+</head>
+<body>
+  <div id="widget1"></div>
+
+  <script type="text/javascript">
+    function createWidget(guid, selector, mediaType, parameter) {
+      var widget = KV.widget({
+        selector: selector,
+        domain: 'apac.qumucloud.com',
+        context: '',
+        guid: guid,
+        type: 'playback',
+        playerType: 'full',
+        autoLoad: false,
+        autoPlay: false,
+        loop: true,
+        hideEmbedButton: true,
+        width: 400,
+        hideDownloadButton: true,
+        hideShareButton: true,
+        mediaType: mediaType,
+        showInfoPanel: false,
+        fullPlayerParameters: parameter
+      });
+    }
+    
+    createWidget('2Vq3qKdxIQeuOITkMw11En', '#widget1', 'mo', {
+      version: 2,
+      volume: 0
+    });
+  </script>
+</body>
+
+</html>
