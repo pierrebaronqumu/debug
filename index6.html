@@ -8,6 +8,16 @@
 <body style="margin: 0;">
   <div id="widget1"></div>
 
+  <hr/>
+    <div id="widget1"></div>
+  <hr/>
+    <div id="widget2"></div>
+  <hr/>
+    <div id="widget3"></div>
+  <hr/>
+    <div id="widget4"></div>
+
+
   <script type="text/javascript">
     function createWidget(guid, selector, mediaType, parameter) {
       var widget = KV.widget({
@@ -34,6 +44,28 @@
       volume: 0,
       debug:true,
     });
+
+    KV.widget({
+      selector: '#widget2',
+  "guid": "PMoQmms37sQoOihplHsK0X",
+  "type": "playlist",
+  "showInfoPanel": false,
+  "playlistLoop": true
+});
+
+    KV.widget({
+      selector: '#widget3',
+  "guid": "PMoQmms37sQoOihplHsK0X",
+  "type": "thumbnail",
+  "showInfoPanel": false,
+  "playlistLoop": true
+});
+
+    KV.widget({
+            selector: '#widget4',
+  "guid": "PMoQmms37sQoOihplHsK0X",
+  "type": "grid",
+});
   </script>
 </body>
 
